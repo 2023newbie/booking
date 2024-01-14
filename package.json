@@ -1,0 +1,26 @@
+{
+  "name": "asm2-adjust",
+  "version": "1.0.0",
+  "description": "The website makes booking accommodations while traveling easier. The website includes client-side functionalities such as viewing hotels, searching for hotels, logging in, and registering an account. On the admin-side, the owner can add/edit/delete rooms, track revenue, and monitor occupied rooms.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon backend/app.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm i && npm i --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
